@@ -1,0 +1,48 @@
+{
+    "agent": "FernieAgent",
+    "working_mode": "train",
+    "debug": false,
+
+    "checkpoint_file": "checkpoint.pth.tar",
+    "train_file": "/y/Aurora/Fernie/data/structure_based_data/Kernie_feature/Kernie.single_pose.undersample.pickle",
+    "result_dir": "/y/Aurora/Fernie/debug/pure_pytorch",
+
+    "batch_size": 320,
+    "num_workers": 12,
+    "n_splits": 10,
+    "validation_split": 0.1,
+    "label": true,
+    "transform": false,
+
+    "cf": 600,
+    "h": 100, 
+    "datm": 200,
+    "damino": 200,
+    "dchrg": 200,
+    "ddist": 200,
+    "A" : 35,
+    "D" : 50,
+    "C": 50,
+    "R": 34, 
+    "kc": 6,
+    "kp": 2,
+    "max_atom_num" : 100,
+
+    "pool_type": "max",
+    "activation": "False",
+    "dp_rate" : 0.15,
+    "batchnorm": true,
+
+    "use_scheduler": false,
+    "seed": 1337,
+    "gpu_device": 0,
+    "cuda": true,
+    "max_epoch": 30,
+    
+    "optimizer_name": "adam",
+    "lr" : 0.0001,
+    "weight_decay": 0.001,
+    "weighted_loss": false,
+    "pos_weight": 20,
+    "neg_weight": 1
+}

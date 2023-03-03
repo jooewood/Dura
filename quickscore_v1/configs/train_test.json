@@ -1,0 +1,53 @@
+{
+    "agent": "FernieAgent",
+    "working_mode": "train",
+    "debug": true,
+    "pose": [0],
+    "undersample": false,
+    "undersample_type": "per",
+
+    "checkpoint_file": "checkpoint.pth.tar",
+    "train_file": ["/home/zdx/data/VS_dataset/DUD-E/original_actives_docked_feature/aa2ar.smina.knn.pickle",
+                   "/home/zdx/data/VS_dataset/DUD-E/original_decoys_docked_feature/aa2ar.smina.knn.pickle",
+                   "/home/zdx/data/VS_dataset/DUD-E/original_actives_docked_feature/adrb1.smina.knn.pickle", 
+                   "/home/zdx/data/VS_dataset/DUD-E/original_decoys_docked_feature/adrb1.smina.knn.pickle"],
+    "result_dir": "/home/zdx/Downloads/test_result",
+
+    "batch_size": 8,
+    "num_workers": 12,
+    "n_splits": 10,
+    "validation_split": 0.1,
+    "transform": false,
+
+    "cf": 600,
+    "h": 100, 
+    "datm": 200,
+    "damino": 200,
+    "dchrg": 200,
+    "ddist": 200,
+    "A" : 35,
+    "D" : 50,
+    "C": 50,
+    "R": 34, 
+    "kc": 6,
+    "kp": 2,
+    "max_atom_num" : 100,
+
+    "pool_type": "max",
+    "activation": "False",
+    "dp_rate" : 0.15,
+    "batchnorm": true,
+
+    "use_scheduler": false,
+    "seed": 1337,
+    "gpu_device": 0,
+    "cuda": true,
+    "max_epoch": 15,
+    
+    "optimizer_name": "adam",
+    "lr" : 0.0001,
+    "weight_decay": 0.001,
+    "weighted_loss": false,
+    "pos_weight": 20,
+    "neg_weight": 1
+}
